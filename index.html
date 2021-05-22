@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>vmcreativo</title>
+    <meta name="description" content="Diseño Gráfico" />
+    <meta name="author" content="vmcreativo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+
+  <body>
+    <!-- Grid -->
+      <header>
+        <div><img src="img/vm-web.png" alt="logo-vmcreativo" /></div>
+        <img src="img/menu.png" class="menu" onclick="openNav()"></img>
+      </header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">INICIO</a>
+          <a href="#">PORTFOLIO</a>
+          <a href="#">SOBRE MÍ</a>
+        </div>
+      </div>
+      </nav>
+      <!-- Sección Portada -->
+      <div  id="inicio" class="portada">
+        <h1>vmcreativo <span>diseño</span></h1>
+      </div>
+      <p>Descubre lo que te diferencia del resto<span class="rojo">.</span></p>
+      <!-- Barra navegación Izquierda -->   
+      <aside class="navizq">
+        <li>
+          <a href="#inicio">01 <br />Portada</a>
+        </li>
+        <li>
+          <a href="#servicio">02 <br />Servicios</a>
+        </li>
+        <li>
+          <a href="#trabajo">03 <br />Trabajos</a>
+        </li>
+        <li>
+          <a href="#contact">04 <br />Contacto</a>
+        </li>
+      </aside>
+      <!-- Sección Servicios -->
+
+      <div id="servicio" class="servicios">
+        <h1>Servicios</h1>
+        <!-- Flex para boxes de servicios -->
+        <div class="flex">
+          <!-- Diseño G -->
+          <div class="box">
+            <img src="" alt="diseño-grafico" />
+            <h3>Diseño Gráfico</h3>
+            <hr />
+            <p>
+              Me gustan los retos. Doy forma a tus proyectos y a tus
+              pensamientos. Realizo diseño para imprenta o soporte digital… ¡Me
+              atrevo con cualquier elaboración creativa que necesites!
+            </p>
+          </div>
+          <!-- Diseño W -->
+          <div class="box">
+            <img src="" alt="diseño-web" />
+            <h3>Diseño web</h3>
+            <hr />
+            <p>
+              Diseñamos y desarrollamos tu sitio web
+              adaptables y a medida. Te ofrecemos
+              diferentes planes y tarifas para resolver el
+              trabajo de la mejor forma posible según tus
+              necesidades.
+            </p>
+          </div>
+          <!-- Imagen Corporativa -->
+          <div class="box">
+            <img src="" alt="imagen-corporativa" />
+            <h3>Imagen Corporativa</h3>
+            <hr />
+            <p>
+              A medida que avanza el tiempo la imagen
+              que da una empresa va ganando
+              másmportancia. Mejora la tuya aportando
+              el toque de creatividad que haga que te
+              diferencies del resto.
+            </p>
+          </div>
+          </div>
+          <!-- Flex 2 para boxes -->
+          <div class="flex">
+          <!-- Maquetación -->
+          <div class="box">
+            <img src="" alt="maquetación" />
+            <h3>Maquetación</h3>
+            <hr />
+            <p>
+              Me encargo de la maquetación para tus
+              documentos. Maqueto revistas para
+              impresión e interactivas, boletines,
+              catálogos y libros. Si necesitas un trabajo
+              bien estructurado podemos trabajar juntos.
+            </p>
+          </div>
+          <!-- Llamalo x -->
+          <div class="box">
+            <img src="" alt="llamalo-x" />
+            <h3>Llámalo -x-</h3>
+            <hr />
+            <p>
+              El diseño es mi pasión. Si tienes algún
+              tipo de proyecto que no esté nombrado
+              anteriormente, contacta conmigo e
+              intentaré ofrecerte el mejor servicio
+              posible.
+            </p>
+          </div>
+          <!-- Packaging -->
+          <div class="box">
+            <img src="" alt="Packaging" />
+            <h3>Packaging</h3>
+            <hr />
+            <p>
+              «La primera impresión» de un producto es
+              importante. Por ello, me encargo de
+              conseguir una imagen con fuerza para tus
+              productos para que el resultado sea un
+              producto llamativo.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Sección Trabajos -->
+      <div id="trabajo" class="trabajos">  
+        <h1>Trabajos <span>Recientes</span> </h1>
+        <div class="port">
+          <div><img class="hover" src="img/AppLFT-420x315.png" alt=""></div>
+          <div><img src="img/Book-Mockup-GD-scaled-420x315.jpg" alt=""></div>
+          <div><img src="img/Carta-La-Ostra-scaled-420x315.jpg" alt=""></div>
+          <div><img src="img/SaraChacor-420x315.jpg" alt=""></div>
+          <div><img src="img/ConcursoCerve-1-scaled-420x315.jpg" alt=""></div>
+          <div></div>
+        </div>
+      </div>
+      
+        <!-- 450x365px-->
+      <!-- Sección Sobre mí 
+      <div class="sobremi">
+        <h1>Sobre mí</h1>
+        <p>Descubre lo que te diferencia del resto</p>
+      </div> -->
+      <!-- Sección Contacto -->
+      <div id="contact" class="contacto">
+        <h1>Contacta <span>conmigo</span></h1>
+        <div class="port">
+          <img src="img/email.jpg" alt="contacto-email">
+          <img src="img/telefono.jpg" alt="contacto-telefono">
+          <img src="img/cafe.jpg" alt="contacto-cafe">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+  </body>
+</html>
