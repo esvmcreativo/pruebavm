@@ -165,7 +165,7 @@ h1 span {
     width: 100%;
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 650px) {
     .menu {
         width: 35px;
         height: 25px;
