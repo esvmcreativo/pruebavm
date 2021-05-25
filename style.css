@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-flow: column;
 
-    gap: 50px;
 
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(241, 241, 241);
@@ -32,7 +31,6 @@ header {
 
     justify-content: space-between;
 
-    box-sizing: border-box;
     height: 15%;
     width: 100%;
     position: fixed;
@@ -41,7 +39,7 @@ header {
 }
 
 .menu {
-    width: 30px;
+    max-block-size: 30px;
     cursor: pointer;
     color: red;
     top: 5%;
@@ -80,6 +78,7 @@ h1 span {
     background-image: url('img/Portada.jpg');
     background-position: center;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .portada + p {
@@ -135,10 +134,28 @@ h1 span {
 
     float: left;
 
-    height: 100vh;
     width: 100%;
-    box-sizing: border-box;
-    padding: 0 3% 0 10.5%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10%;
+    margin-bottom: 50px;
+
+}
+
+.box img {
+    width: 56px;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    bottom: 0;    
+    transition: transform .1s;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    border: 1px solid red;
 }
 
 .servicios p {
@@ -152,20 +169,33 @@ h1 span {
     column-gap: 30px;
 }
 .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex: 1 0;
+    text-align: center;
 }
+
+hr {
+    width: 50%;
+}
+
 .trabajos {
     float: left;
     display: flex;
     flex-flow: column;
-    padding: 0 3% 0 10.5%;
-
-
-    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
+    margin-bottom: 50px;
 }
 
-@media screen and(max-width: 650px) {
+
+@media screen and (max-width: 650px) {
+    body {
+        gap: 20px;
+    }
     .menu {
         width: 35px;
         height: 25px;
@@ -182,6 +212,7 @@ h1 span {
         flex-flow: column;
         height: auto;
     }
+    
     .flex {
         flex-flow: column;
     }
@@ -189,9 +220,16 @@ h1 span {
         flex-flow: column;
         height: auto;
     }
-    .contacto {
+    .port {
+        flex-flow: column;
         height: auto;
     }
+    .contacto {
+        flex-flow: column;
+        height: auto;
+    }
+
+    
 }
 
 .port {
@@ -200,7 +238,7 @@ h1 span {
     flex-flow: row wrap;
 
     gap: 10px;
-    justify-content: stretch;
+    justify-content: center;
 
     z-index: 1;
 }
@@ -210,15 +248,66 @@ h1 span {
     max-height: 315px;
 }
 
+.boton-ver {
+    display: flex;
+    min-width: 420px;
+    min-height: 315px;
+    background-color: red;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: transform .1s;
+}
+
+.boton-ver:hover {
+    transform: scale(1.05);
+}
+
 .contacto {
     float: left;
-    display: grid;
-    place-content: center;
-    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
     background-color: rgb(29, 29, 29);
     color: white;
 
-    height: 100vh;
     width: 100%;
-    padding: 0 3% 0 10.5%;
+    align-items: center;
+    padding: 3%;
+}
+
+.contacto .port {
+    padding: 8% 0;
+}
+
+footer {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -20px;
+
+    background-color: rgb(29, 29, 29);
+
+    width: 100%;
+    height: auto;
+    padding: 1.5%;
+    bottom: 0;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+      color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: rgb(139, 139, 139);
 }
