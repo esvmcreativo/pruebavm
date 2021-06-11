@@ -8,7 +8,9 @@
   .container h3 {
       position: absolute;
       color: white;
-  }
+      padding: 3%;
+     text-align: center;    
+    }
   
   .image {
     display: block;

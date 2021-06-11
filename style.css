@@ -26,33 +26,43 @@ h1 span {
 }
 
 header {
-    display: grid;
     display: flex;
 
-    justify-content: space-between;
 
-    height: 15%;
+    height: 8%;
     width: 100%;
     position: fixed;
-    padding: 3%;
     z-index: 2;
+    background-color: rgb(241, 241, 241);
+    box-shadow: rgb(182, 182, 182) 0 0 0 1.5px;
 }
 
-.menu {
-    max-block-size: 30px;
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.8% 3%;
+    width: 100%;
+
+}
+
+header div img {
+    max-block-size: 18px;
     cursor: pointer;
-    color: red;
-    top: 5%;
 }
 
 /* main nav */
+
+
+
 
 .portada h1 {
 
     font-size: 3.5em;
     font-weight: bold;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 h1 span {
@@ -67,18 +77,42 @@ h1 span {
 
 
 .portada {
+    /*
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: stretch;
+    align-items: center;*/
+
+
     display: grid;
-
     place-content: center;
-    float: left;
-
-
     height: 100vh;
     width: 100%;
     background-image: url('img/Portada.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
     margin-bottom: 50px;
+}
+
+.portada div:nth-of-type(1) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+
+    width: 50%;
+    height: 100vh;
+    padding: 5%;
+}
+
+.portada div:nth-of-type(1) h1 {
+    text-align: right;
+}
+
+.portada div:nth-of-type(2) {
+    background-color: #d05249;
+    width: 50%;
+    height: 100vh;
 }
 
 .portada + p {
@@ -193,9 +227,6 @@ hr {
 
 
 @media screen and (max-width: 650px) {
-    body {
-        gap: 20px;
-    }
     .menu {
         width: 35px;
         height: 25px;
@@ -295,12 +326,14 @@ footer {
     height: auto;
     padding: 1.5%;
     bottom: 0;
+    color: white;
 }
 
 footer ul li {
     list-style: none;
     display: inline;
     margin-right: 20px;
+    text-align: center;
 }
 
 footer ul li a {
@@ -311,3 +344,4 @@ footer ul li a {
 footer ul li a:hover {
     color: rgb(139, 139, 139);
 }
+
