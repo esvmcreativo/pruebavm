@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/vm-icon-web.png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/vm-icon-web.png"
+      sizes="32x32"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/vm-icon-web.png"
+      sizes="64x64"
+    />
+
+    <!-- Metas -->
+
+    <title>vmcreativo</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Diseño Gráfico" />
+    <meta name="author" content="vmcreativo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="cookies.css" />
+    <link rel="stylesheet" href="hover-img.css" />
+    <link rel="stylesheet" href="smi.css">
+
+    <!-- scripts -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body>
+    
+    <!-- Cookies -->
+    <div id="cajacookies" class="cajacookies">
+      <p>
+        <button class="button3" onclick="aceptarCookies()" class="pull-right">
+          <i class="fa fa-times"></i> Aceptar y cerrar éste mensaje
+        </button>
+        Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer
+        más sobre el uso de cookies en nuestra
+        <a href="politica.html">política de privacidad</a>.
+      </p>
+    </div>
+    <!-- Cabecera -->
+    <header>
+      <div><a href="index.html"><img src="img/vm-web.png" alt="logo-vmcreativo" /></a><img src="img/menu.png" class="menu" onclick="openNav()" /></div>
+    </header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html">INICIO</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="sobre-mi.html">SOBRE MÍ</a>
+      </div>
+    </div>
+    <div class="contenido1">
+        <div class="botones"><a href="portfolio.html">Portfolio</a></div>
+        <h1>Web - Camisetas Colorcereza</h1>
+        <img src="img/portfolio/ccereza1.jpg" alt="ccereza1">
+        <img src="img/portfolio/ccereza2.jpg" alt="ccereza2">
+        <img src="img/portfolio/ccereza3.jpg" alt="ccereza3">
+        <img src="img/portfolio/ccereza4.jpg" alt="ccereza4">
+
+    </div>
+    <footer>
+      <ul>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Cookies</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
